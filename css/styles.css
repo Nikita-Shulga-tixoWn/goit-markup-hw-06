@@ -33,9 +33,9 @@ a {
 
 .container {
     width: 100%;
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -70,7 +70,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 15px;
 }
 
 .nav {
@@ -291,18 +290,18 @@ section {
     color: #404bbf;
 }
 
-.mob-social {
-    display: flex;
-    justify-content: center;
-    margin-top: 48px;
+.mob-contacts-link.phone {
+    color: #4d5ae5;
 }
+
 
 .mob-social-links {
     display: flex;
     gap: 40px;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-top: 48px;
+    margin-bottom: auto;
 }
 
 .mob-link-item {
@@ -326,21 +325,31 @@ section {
     background-color: #404bbf;
 }
 
-.link-logo {
+.mob-link-logo {
     fill: #ffffff;
-    width: 16px;
-    height: 16px;
 }
 
+
 .hero-section {
-    padding: 112px 0;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("../images/people-office-1x-min.jpg");
+        url("../images/mob-people-office-1x.jpg");
     background-color: #2e2f42;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/mob-people-office-2x.jpg");
+    }
 }
 
 .hero-section .container {
@@ -351,8 +360,8 @@ section {
 }
 
 .hero-title {
-    max-width: 320px;
-    margin: 0 auto 72px;
+    max-width: 216px;
+    padding-bottom: 72px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -412,7 +421,7 @@ section {
     margin-bottom: 8px;
 }
 
-.feature-text {
+.features-text {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -627,9 +636,6 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 72px;
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
     text-align: center;
 }
 
@@ -668,6 +674,7 @@ section {
     color: #f4f4fd;
     max-width: 264px;
     margin: 0 auto;
+    text-align: left;
 }
 
 .footer-social {
@@ -1029,15 +1036,16 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
         max-width: 768px;
     }
 
+    .mob-menu {
+        display: none;
+    }
+
     .contacts-list {
         display: flex;
         flex-direction: column;
     }
 
     .header .container {
-        min-width: 768px;
-        height: 72px;
-        padding: 0 16px;
         gap: 120px;
     }
 
@@ -1067,11 +1075,15 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
         max-width: 496px;
         font-size: 56px;
         line-height: 1.07;
-        margin-bottom: 36px;
+        padding-bottom: 36px;
     }
 
     .hero-section {
         padding: 112px 0;
+        max-width: 768px;
+        margin: 0 auto;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/tablet-people-office-1x.jpg");
     }
 
     .features-list {
@@ -1091,6 +1103,22 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
         gap: 64px 24px;
     }
 
+    .features-title {
+        text-align: left;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+    }
+
+    .features-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
 
 
     .portfolio-list {
@@ -1110,8 +1138,8 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
         text-align: left;
         gap: 72px 24px;
         align-items: flex-start;
-        padding-left: 92px;
-        margin-left: 16px;
+        padding-left: 108px;
+        margin-left: auto;
     }
 
     .footer-left,
@@ -1140,6 +1168,13 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
 
 }
 
+@media (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url('../images/tablet-people-office-2x.jpg');
+    }
+}
+
 @media screen and (min-width: 1158px) {
 
     .container {
@@ -1148,9 +1183,7 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
         padding-right: 15px;
     }
 
-    .header .container {
-        padding: 0 15px;
-    }
+
 
     .contacts-link {
         font-size: 16px;
@@ -1174,7 +1207,7 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
         padding: 188px 0;
         text-align: center;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url("../images/people-office.jpg");
+            url("../images/people-office-1x-min.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -1190,11 +1223,10 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
         color: #ffffff;
         text-align: center;
         max-width: 496px;
+        padding-bottom: 48px;
     }
 
-    .hero-button {
-        margin-top: 48px;
-    }
+
 
     .hero-button:hover,
     .hero-button:focus {
@@ -1211,7 +1243,20 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
     }
 
     .features-title {
-        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+
+    }
+
+    .features-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
     }
 
     .features-list {
@@ -1276,7 +1321,7 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
         flex-direction: row;
         justify-content: space-between;
         gap: 0;
-        margin-left: 141px;
+        margin-left: auto;
 
     }
 
@@ -1298,5 +1343,12 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
 
     .footer-input {
         flex-grow: 1;
+    }
+}
+
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url('../images/people-office.jpg');
     }
 }
