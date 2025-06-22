@@ -361,7 +361,7 @@ section {
 
 .hero-title {
     max-width: 216px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -1075,7 +1075,7 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
         max-width: 496px;
         font-size: 56px;
         line-height: 1.07;
-        padding-bottom: 36px;
+        margin-bottom: 36px;
     }
 
     .hero-section {
@@ -1223,7 +1223,7 @@ input[type="checkbox"]:checked~label .modal-checkbox-icon {
         color: #ffffff;
         text-align: center;
         max-width: 496px;
-        padding-bottom: 48px;
+        margin-bottom: 48px;
     }
 
 
